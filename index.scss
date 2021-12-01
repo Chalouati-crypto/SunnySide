@@ -1,0 +1,8 @@
+.content {
+  @media only screen and (max-height=50em) {
+    transform: translateY(20%);
+  }
+}
+h1 {
+  background-clip: text;
+}

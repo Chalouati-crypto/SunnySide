@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./index.js"></script>
+    <title>sunnyside landing page</title>
+  </head>
+  <body class="font-fraunces">
+    <div class="wrapper">
+      <!-- hero section -->
+      <section
+        class="
+          pt-7
+          desktop:pt-16
+          hero
+          relative
+          h-[62vh]
+          desktop:h-[100vh]
+          bg-hero
+          desktop:bg-hero-desktop
+          bg-center bg-cover
+        "
+      >
+        <nav class="flex justify-between px-mainpadding">
+          <a href="$"
+            ><img class="desktop:w-52" src="/src/assets/images/logo.svg" alt=""
+          /></a>
+          <ul class="nav-links desktop:flex items-center gap-10">
+            <li class="desktop:hidden hamburger">
+              <a href="#" class=""
+                ><img src="src/assets/images/icon-hamburger.svg" alt=""
+              /></a>
+              <div
+                class="
+                  hidden
+                  menu
+                  bg-white
+                  z-10
+                  flex flex-col
+                  items-center
+                  py-[15%]
+                  justify-around
+                  absolute
+                  left-[5%]
+                  right-[5%]
+                  top-[15%]
+                  bottom-[20%]
+                "
+              >
+                <a class="text-dark-grayish-blue" href="#">About</a>
+                <a class="text-dark-grayish-blue" href="#">Services</a>
+                <a class="text-dark-grayish-blue" href="#">Projects</a>
+                <a class="text-[#000] bg-yellow py-4 px-9 rounded-full" href="#"
+                  >Contact</a
+                >
+              </div>
+            </li>
+            <li class="hidden desktop:block">
+              <a class="text-white text-2xl font-barlow" href="#">About</a>
+            </li>
+            <li class="hidden desktop:block">
+              <a class="text-white text-2xl font-barlow" href="#">Services</a>
+            </li>
+            <li class="hidden desktop:block">
+              <a class="text-white text-2xl font-barlow" href="#">Projects</a>
+            </li>
+            <li class="hidden desktop:block">
+              <a
+                class="
+                  text-[#000]
+                  bg-white
+                  hover:bg-opacity-70
+                  py-4
+                  px-8
+                  rounded-full
+                  text-xl
+                  font-barlow
+                "
+                href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="
+            content
+            translate-y-[65%]
+            flex flex-col
+            justify-center
+            items-center
+            text-center
+          "
+        >
+          <h1
+            class="
+              text-white
+              w-4/6
+              tracking-widest
+              text-4xl
+              desktop:text-6xl
+              uppercase
+              mb-10
+              desktop:mb-24
+            "
+          >
+            We are creatives
+          </h1>
+          <img src="src/assets/images/icon-arrow-down.svg" alt="" />
+        </div>
+      </section>
+      <!-- the 2 sections that have the learn more cta -->
+      <section class="learn-more">
+        <div
+          class="learn-more1 mb-10 desktop:mb-0 desktop:h-[80vh] desktop:flex"
+        >
+          <div class="img-container desktop:order-1 desktop:w-1/2">
+            <img
+              src="src/assets/images/mobile/image-transform.jpg"
+              class="w-full desktop:hidden"
+              alt=""
+            />
+            <img
+              src="src/assets/images/desktop/image-transform.jpg"
+              class="hidden desktop:block h-full w-full object-cover"
+              alt=""
+            />
+          </div>
+          <div
+            class="
+              content-container
+              px-mainpadding
+              desktop:px-[10vw]
+              pt-10
+              desktop:grid desktop:place-content-center desktop:gap-6
+              text-center
+              desktop:w-1/2 desktop:text-left
+            "
+          >
+            <h1
+              class="
+                text-3xl
+                desktop:text-5xl
+                w-4/6
+                mx-auto
+                mb-5
+                desktop:mx-0
+                text-very-dark-desaturated-blue
+              "
+            >
+              Transform your brand
+            </h1>
+            <p
+              class="
+                font-barlow
+                text-sm
+                desktop:text-lg
+                mx-auto
+                desktop:mx-0 desktop:w-3/4
+                text-dark-grayish-blue
+                mb-5
+              "
+            >
+              We are a full-service creative agency specializing in helping
+              brands grow fast. engage your clients through compelling visuals
+              that do most of the marketing for your
+            </p>
+            <a
+              href="#"
+              class="
+                w-[fit-content]
+                text-lg
+                relative
+                uppercase
+                after:block
+                after:w-full
+                after:absolute
+                after:h-2
+                after:rounded-full
+                after:opacity-30
+                after:bottom-[-.2rem]
+                after:left-0
+                after:bg-yellow
+                hover:after:opacity-100
+              "
+              >Learn more</a
+            >
+          </div>
+        </div>
+        <div
+          class="learn-more2 mb-10 desktop:mb-0 desktop:h-[80vh] desktop:flex"
+        >
+          <div class="img-container desktop:w-1/2">
+            <img
+              src="src/assets/images/mobile/image-stand-out.jpg"
+              class="w-full desktop:hidden"
+              alt=""
+            />
+            <img
+              src="src/assets/images/desktop/image-stand-out.jpg"
+              class="hidden desktop:block h-full w-full object-cover"
+              alt=""
+            />
+          </div>
+          <div
+            class="
+              content-container
+              px-mainpadding
+              desktop:px-[10vw]
+              pt-10
+              desktop:grid desktop:place-content-center desktop:gap-6
+              text-center
+              desktop:w-1/2 desktop:text-left
+            "
+          >
+            <h1
+              class="
+                text-3xl
+                desktop:text-5xl
+                w-[90%]
+                mx-auto
+                mb-5
+                desktop:mx-0
+                text-very-dark-desaturated-blue
+              "
+            >
+              Stand out to the right audience
+            </h1>
+            <p
+              class="
+                font-barlow
+                text-sm
+                desktop:text-lg
+                mx-auto
+                desktop:mx-0 desktop:w-3/4
+                text-dark-grayish-blue
+                mb-5
+              "
+            >
+              We are a full-service creative agency specializing in helping
+              brands grow fast. engage your clients through compelling visuals
+              that do most of the marketing for your
+            </p>
+            <a
+              href="#"
+              class="
+                w-[fit-content]
+                text-lg
+                relative
+                uppercase
+                after:block
+                after:w-full
+                after:absolute
+                after:h-2
+                after:rounded-full
+                after:opacity-30
+                after:bottom-[-.2rem]
+                after:left-0
+                after:bg-soft-red
+                hover:after:opacity-100
+              "
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- the 2 sections that talk about graphic design and photography -->
+      <section class="about desktop:flex">
+        <div
+          class="
+            about1
+            desktop:w-1/2
+            h-[60vh]
+            desktop:h-[80vh]
+            bg-cherry
+            desktop:bg-cherry-desktop
+            bg-cover bg-top
+            grid
+            place-content-end
+            pb-10
+            desktop:pb-20
+            text-center
+          "
+        >
+          <h1
+            class="
+              px-mainpadding
+              text-[1.8rem] text-dark-desaturated-cyan-graphic-design-text
+              mb-5
+            "
+          >
+            Graphic Design
+          </h1>
+          <p
+            class="
+              px-mainpadding
+              font-barlow
+              text-dark-desaturated-cyan-graphic-design-text
+              desktop:w-2/3 desktop:mx-auto desktop:text-xl
+            "
+          >
+            Great design makes you memorable. we deliver artwork that
+            underscores your brand messgae and captures potential client's
+            attention.
+          </p>
+        </div>
+        <div
+          class="
+            about2
+            desktop:w-1/2
+            h-[60vh]
+            desktop:h-[80vh]
+            bg-orange
+            desktop:bg-orange-desktop
+            bg-cover bg-top
+            grid
+            place-content-end
+            pb-10
+            desktop:pb-20
+            text-center
+          "
+        >
+          <h1
+            class="
+              px-mainpadding
+              text-[1.8rem] text-dark-blue-photography-text
+              mb-5
+            "
+          >
+            Photography
+          </h1>
+          <p
+            class="
+              px-mainpadding
+              font-barlow
+              text-dark-blue-photography-text
+              desktop:w-2/3 desktop:mx-auto desktop:text-xl
+            "
+          >
+            Great design makes you memorable. we deliver artwork that
+            underscores your brand messgae and captures potential client's
+            attention.
+          </p>
+        </div>
+      </section>
+      <!-- testamonials section -->
+      <section
+        class="
+          testamonials
+          px-mainpadding
+          desktop:px-[10vw]
+          text-center
+          desktop:min-h-[90vh] desktop:grid desktop:place-content-center
+        "
+      >
+        <h1 class="text-grayish-blue tracking-[.2em] text-lg pt-10 pb-16">
+          CLIENT TESTIMONIALS
+        </h1>
+        <div class="testamonials-wrapper big-desktop:flex">
+          <div class="testamonial1">
+            <img
+              src="src/assets/images/image-emily.jpg"
+              alt="a pic of emily"
+              class="mx-auto w-16 desktop:w-20 rounded-full mb-5 desktop:mb-8"
+            />
+            <p
+              class="
+                font-barlow
+                text-dark-grayish-blue
+                w-4/5
+                mx-auto
+                mb-7
+                desktop:mb-10 desktop:text-xl desktop:w-1/2
+              "
+            >
+              We put our trust in sunnyside and they delivered. making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <h1 class="text-xl mb-2">Emily R.</h1>
+            <h3 class="font-barlow text-grayish-blue text-sm mb-16">
+              Marketing director
+            </h3>
+          </div>
+          <div class="testamonial2">
+            <img
+              src="src/assets/images/image-thomas.jpg"
+              alt="a pic of emily"
+              class="mx-auto w-16 desktop:w-20 rounded-full mb-5 desktop:mb-8"
+            />
+            <p
+              class="
+                font-barlow
+                text-dark-grayish-blue
+                w-4/5
+                mx-auto
+                mb-7
+                desktop:mb-10 desktop:text-xl desktop:w-1/2
+              "
+            >
+              We put our trust in sunnyside and they delivered. making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <h1 class="text-xl mb-2">Thomas S.</h1>
+            <h3 class="font-barlow text-grayish-blue text-sm mb-16">
+              Marketing director
+            </h3>
+          </div>
+          <div class="testamonial3">
+            <img
+              src="src/assets/images/image-jennie.jpg"
+              alt="a pic of emily"
+              class="mx-auto w-16 desktop:w-20 rounded-full mb-5 desktop:mb-8"
+            />
+            <p
+              class="
+                font-barlow
+                text-dark-grayish-blue
+                w-4/5
+                mx-auto
+                mb-7
+                desktop:mb-10 desktop:text-xl desktop:w-1/2
+              "
+            >
+              We put our trust in sunnyside and they delivered. making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <h1 class="text-xl mb-2">Jennie F.</h1>
+            <h3 class="font-barlow text-grayish-blue text-sm mb-16">
+              Marketing director
+            </h3>
+          </div>
+        </div>
+      </section>
+      <!-- the gallery section -->
+      <section class="gallery grid grid-cols-2 desktop:grid-cols-4">
+        <img
+          class="w-full h-full object-cover object-center desktop:hidden"
+          src="src/assets/images/mobile/image-gallery-milkbottles.jpg"
+          alt=""
+        />
+        <img
+          class="
+            w-full
+            h-[25rem]
+            big-desktop:h-[35rem]
+            object-cover object-center
+            hidden
+            desktop:block
+          "
+          src="src/assets/images/mobile/image-gallery-milkbottles.jpg"
+          alt=""
+        />
+        <img
+          class="w-full h-full object-cover object-center desktop:hidden"
+          src="src/assets/images/mobile/image-gallery-orange.jpg"
+          alt=""
+        />
+        <img
+          class="
+            w-full
+            h-[25rem]
+            big-desktop:h-[35rem]
+            object-cover object-center
+            hidden
+            desktop:block
+          "
+          src="src/assets/images/mobile/image-gallery-orange.jpg"
+          alt=""
+        />
+        <img
+          class="w-full h-full object-cover object-center desktop:hidden"
+          src="src/assets/images/mobile/image-gallery-cone.jpg"
+          alt=""
+        />
+        <img
+          class="
+            w-full
+            h-[25rem]
+            big-desktop:h-[35rem]
+            object-cover object-center
+            hidden
+            desktop:block
+          "
+          src="src/assets/images/mobile/image-gallery-cone.jpg"
+          alt=""
+        />
+        <img
+          class="w-full h-full object-cover object-center desktop:hidden"
+          src="src/assets/images/mobile/image-gallery-sugar-cubes.jpg"
+          alt=""
+        />
+        <img
+          class="
+            w-full
+            h-[25rem]
+            big-desktop:h-[35rem]
+            object-cover object-center
+            hidden
+            desktop:block
+          "
+          src="src/assets/images/mobile/image-gallery-sugar-cubes.jpg"
+          alt=""
+        />
+      </section>
+      <!-- footer section -->
+      <footer class="footer bg-footer-bg pt-14 px-mainpadding text-center">
+        <a
+          href="index.html"
+          class="
+            mx-auto
+            w-[fit-content]
+            block
+            mb-8
+            text-dark-desaturated-cyan-graphic-design-text text-3xl
+            desktop:text-5xl
+          "
+          >sunnyside
+        </a>
+        <ul
+          class="
+            nav-links
+            flex
+            items-center
+            justify-around
+            desktop:justify-center desktop:gap-12
+            mb-16
+          "
+        >
+          <li>
+            <a
+              class="
+                hover:text-white
+                text-dark-moderate-cyan-footer-text
+                desktop:text-xl
+              "
+              href="#"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="
+                hover:text-white
+                text-dark-moderate-cyan-footer-text
+                desktop:text-xl
+              "
+              href="#"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              class="
+                hover:text-white
+                text-dark-moderate-cyan-footer-text
+                desktop:text-xl
+              "
+              href="#"
+              >Projects</a
+            >
+          </li>
+        </ul>
+        <ul
+          class="
+            social-links
+            flex
+            items-center
+            gap-5
+            desktop:gap-8
+            justify-center
+            pb-20
+          "
+        >
+          <li>
+            <a href="#"
+              ><img src="src/assets/images/icon-facebook.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="src/assets/images/icon-instagram.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="src/assets/images/icon-twitter.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="src/assets/images/icon-pinterest.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
